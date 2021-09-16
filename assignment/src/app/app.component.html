@@ -1,0 +1,27 @@
+<button (click)="getUserslist()">Get Users</button>
+<button (click)="getUsersprofile()">Get Users Profile</button>
+
+<div class="mb-16">
+	<div class="bg-white rounded shadow p-4 overflow-hidden flex md:flex-row flex-col">
+		<div class="flex-grow" *ngFor="let i of users.data">
+			<div class="truncate"><b>ID:</b> {{i.id}}</div>
+			<img src="{{i.picture}}">
+		</div>
+	<!-- <div class="flex-grow">
+			<div class="font-semibold text-lg truncate">ms</div> -->
+			<!-- <div class="truncate"><b>Gender:</b> female</div>
+			<div class="truncate"><b>Date of birth:</b> May 01 1996</div>
+			<div class="truncate"><b>Register date:</b> Jun 22 2021</div>
+			<br>
+			<div class="truncate"><b>Email:</b> sara.andersen@example.com</div>
+			<div class="truncate"><b>Phone:</b> 92694011</div> -->
+		<!-- </div> --> 
+		<!-- <div class="flex-grow"><b>Address</b>
+			<div class="truncate"><b>State:</b> Nordjylland</div>
+			<div class="truncate"><b>Street:</b> 9614, SÃ¸ndermarksvej</div>
+			<div class="truncate"><b>City:</b> Kongsvinger</div>
+			<div class="truncate"><b>Country:</b> Denmark</div>
+			<div class="truncate"><b>Timezone:</b> -9:00</div>
+		</div> -->
+	</div>
+</div>
